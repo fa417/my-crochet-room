@@ -98,12 +98,12 @@ function findNamedParent(object) {
 
 // ページリンク
 const toolLinks = {
-  "How to Use": "use.html",
-  "Contact": "contact.html",
-  "FAQ": "faq.html",
-  "Glossary": "glossary.html",
-  "About": "about.html",
-  "Diary": "diary.html"
+  "How to Use": "../../html/use.html",
+  "Contact": "../../html/contact.html",
+  "FAQ": "../../html/faq.html",
+  "Glossary": "../../html/glossary.html",
+  "About": "../../html/about.html",
+  "Diary": "../../html/diary.html"
 };
 
 window.addEventListener('mousemove', (event) => {
