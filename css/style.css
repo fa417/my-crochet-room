@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+/* color */
+:root {
+    --beige-color: #f9f7f2;
+    --black-color: #222222;
+    --white-color: #ffffff;
+    --green-color: #c9dec4;
+    --pink-color: #e07b91;
+}
+
+/*  */
+
+/* whole */
+body {
+    background: var(--beige-color);
+}
+
+/*  */
+
+/* common */
+form button:hover,
+.purchase-btn:hover,
+form button:active,
+.purchase-btn:active {
+    background: var(--white-color);
+    color: var(--pink-color);
+}
+
+/*  */
+
+/* room page - menu - */
+
+#loading {
+    background: var(--beige-color);
+}
+
+.spinner {
+    border: 6px solid var(--white-color);
+    border-top-color: var(--pink-color);
+}
+
+.room-menu-items li a:hover,
+.room-menu-items li a:active {
+    background: var(--green-color);
+}
+
+.room-menu-area {
+    background: var(--white-color);
+}
+
+#controls {
+    background: rgba(249, 247, 242, 0.5);
+}
+
+#btnRoom,
+#btnDesk,
+#btnBookshelf,
+#btnChoose,
+#btnChair,
+#toggleLight,
+#btnBack {
+    background: var(--white-color);
+    border: none;
+    border-radius: 30px;
+}
+
+#btnRoom:hover,
+#btnDesk:hover,
+#btnBookshelf:hover,
+#btnChoose:hover,
+#btnChair:hover,
+#toggleLight:hover,
+#btnBack:hover,
+#btnRoom:active,
+#btnDesk:active,
+#btnBookshelf:active,
+#btnChoose:active,
+#btnChair:active,
+#toggleLight:active,
+#btnBack:active {
+    color: var(--white-color);
+    background: var(--pink-color);
+}
+
+#tooltip {
+    background: var(--white-color);
+}
+
+.follow-menu {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--white-color);
+    border: 1px solid var(--black-color);
+}
+
+.follow-menu:hover,
+.follow-menu:active {
+    color: var(--white-color);
+    background: var(--pink-color);
+    border: 1px solid var(--white-color);
+}
+
+/*  */
+
+/* header */
+.pc-header {
+    border: 1px solid var(--black-color);
+    background: var(--beige-color);
+}
+
+.menu-items li ul {
+    background: var(--white-color);
+}
+
+.menu-items li ul li:hover,
+.menu-items li ul li:active {
+    background-color: var(--green-color);
+}
+
+.menu-items>li:hover>a,
+.menu-items>li:active>a {
+    background: var(--green-color);
+}
+
+/*  */
+
+/* about section */
+.lower-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*  */
+
+/* glossary section */
+.term-item-left,
+.term-item-right {
+    background: var(--white-color);
+    border-radius: 30px;
+}
+
+.glossary-list .term-title {
+    background: var(--green-color);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.grossary-white1,
+.grossary-white3 {
+    position: absolute;
+    top: -130px;
+    left: 20px;
+    width: 90%;
+    z-index: -1;
+}
+
+.grossary-white2,
+.grossary-white4 {
+    position: absolute;
+    top: -130px;
+    right: 20px;
+    width: 90%;
+    z-index: -1;
+}
+
+/*  */
+
+/* diary */
+.diary-thumbnail {
+    border-radius: 30px;
+}
+
+.diary-content {
+    background: var(--white-color);
+    border-radius: 30px;
+}
+
+/*  */
+
+/* faq */
+.point {
+    border: 1px solid var(--black-color);
+    padding: 20px;
+    position: relative;
+    border-radius: 1px;
+}
+
+.point-q {
+    background: var(--beige-color);
+}
+
+/*  */
+
+/* contact */
+form input,
+form textarea {
+    background: var(--white-color);
+    border: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid var(--pink-color);
+}
+
+form button {
+    background: var(--pink-color);
+    border: none;
+    border-radius: 30px;
+}
+
+/*  */
+
+/* product */
+.product-img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.product-name {
+    background: var(--white-color);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.page-link:hover,
+.page-link:active {
+    color: var(--white-color);
+    background: var(--pink-color);
+}
+
+/*  */
+
+/* item page */
+.thumbnail-list img:hover,
+.thumbnail-list img:active {
+    border: 1px solid var(--black-color);
+}
+
+select {
+    border: 1px solid var(--black-color);
+    border-radius: 5px;
+}
+
+select:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.purchase-btn {
+    border: none;
+    background: var(--pink-color);
+    border-radius: 30px;
+}
+
+/*  */

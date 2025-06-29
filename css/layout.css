@@ -1,0 +1,595 @@
+@charset "UTF-8";
+
+/* whole */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/*  */
+
+/* footer */
+footer {
+    text-align: right;
+    padding: 0 40px;
+}
+
+/*  */
+
+/* common */
+.about-container,
+.concept-container,
+.glossary-container,
+.diary-container,
+.faq-container,
+.contact-container,
+.product-container,
+.use-container{
+    min-height: 100vh;
+    padding: 120px 40px 60px 40px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+.section-tagline {
+    width: fit-content;
+    margin: auto;
+}
+
+/*  */
+
+/* room page */
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.room-site-title {
+    position: fixed;
+    top: 10px;
+    left: 40px;
+}
+
+.room-menu-area {
+    position: fixed;
+    top: 10px;
+    right: 40px;
+}
+
+.room-menu-items {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px 0;
+    padding: 0 20px;
+    pointer-events: auto;
+    z-index: 1000;
+}
+
+.room-menu-items.active {
+    display: flex;
+}
+
+.has-sub-menu ul {
+    display: none;
+}
+
+.has-sub-menu.open ul {
+    display: block;
+}
+
+.room-menu-title {
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.room-menu-items .products-sub-menu li,
+.room-menu-items .room-sub-menu li {
+    padding-left: 20px;
+}
+
+.room-menu-items .products-sub-menu li:not(:last-child),
+.room-menu-items .room-sub-menu li:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    gap: 10px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    padding: 10px;
+}
+
+#btnRoom,
+#btnDesk,
+#btnBookshelf,
+#btnChoose,
+#btnChair,
+#toggleLight,
+#btnBack {
+    padding: 5px;
+    width: 150px;
+    display: inline-block;
+}
+
+.follow-menu {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+/*  */
+
+/* header */
+.about .room-header,
+.contact .room-header,
+.faq .room-header,
+.diary .room-header,
+.grossary .room-header,
+.use .room-header,
+.product .room-header,
+.items .room-header {
+    display: none;
+}
+
+.pc-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 0 40px;
+    position: fixed;
+    z-index: 1;
+}
+
+#header-menu {
+    position: relative;
+}
+
+.menu-items {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-items>li {
+    position: relative;
+}
+
+.menu-items>li>a {
+    display: block;
+    text-decoration: none;
+}
+
+.menu-items li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.menu-items li:hover>ul {
+    display: block;
+}
+
+.menu-items li ul li {
+    padding: 5px 20px;
+}
+
+.menu-items li ul li a {
+    display: block;
+}
+
+/*  */
+
+/* sp menu */
+.menu-items li ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+    width: max-content;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-items li {
+    position: relative;
+}
+
+/*  */
+
+/* about section */
+.wrapper {
+    width: 80%;
+    margin: 40px auto 0;
+}
+
+.lower-tier-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+/*  */
+
+/* concept section */
+.wrapper p:not(:last-child),
+.upper-row li:not(:last-child),
+.lower-tier li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+/*  */
+
+/* glossary section */
+.glossary-list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 80%;
+    gap: 10px;
+    margin: 40px auto;
+}
+
+.term-item-left,
+.term-item-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feature-detail{
+    margin: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.crochet-img,
+.afgan-img {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.yarn-type,
+.metaer-figure,
+.material-area {
+    margin-bottom: 50px;
+}
+
+.yarn-type p {
+    width: 80%;
+    margin: auto;
+}
+
+.material-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    row-gap: 140px;
+    column-gap: 10px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.material-items1,
+.material-items2,
+.material-items3,
+.material-items4 {
+    position: relative;
+    overflow: visible;
+    width: calc(50% - 10px);
+    z-index: 0;
+}
+
+/*  */
+
+/* diary */
+.diarys-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 40px auto 0;
+    row-gap: 50px;
+    column-gap: 10px;
+}
+
+.card-inner {
+    position: relative;
+    width: 30%;
+    height: 350px;
+    perspective: 1000px;
+}
+
+.diary-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s;
+}
+
+.diary-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: transform 0.8s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.card-inner:hover .diary-content {
+    transform: rotateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.card-inner:hover .diary-thumbnail {
+    opacity: 0;
+}
+
+/*  */
+
+/* faq */
+.faq-points {
+    margin: 40px auto 0;
+    width: 80%;
+}
+
+.point:not(:last-of-type) {
+    margin-bottom: 40px;
+}
+
+.point-q {
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    padding: 0 5px;
+}
+
+/*  */
+
+/* contact */
+form {
+    margin-top: 40px;
+}
+
+.form-group:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+.form-group:last-of-type {
+    margin-bottom: 40px;
+}
+
+form label {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+form input,
+form textarea {
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+    width: 80%;
+}
+
+.example-text {
+    margin-bottom: 10px;
+}
+
+form button {
+    cursor: pointer;
+    padding: 10px 0;
+    width: 50%;
+}
+
+/*  */
+
+/* use */
+.site-detail {
+    width: 80%;
+    margin: 40px auto 0;
+}
+
+.usage-list {
+    margin: 30px 0;
+}
+
+.sp-br {
+    display: none;
+}
+
+/*  */
+
+/* product */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 40px auto 0;
+    row-gap: 40px;
+    column-gap: 20px;
+}
+
+.product-item {
+    width: calc((100% - 40px) / 3);
+}
+
+.page-link {
+    display: block;
+    margin: 40px auto 0;
+    padding: 5px;
+    width: 10%;
+}
+
+/*  */
+
+/* item page */
+.product-item-detail {
+    margin: 40px auto 0;
+}
+
+.product-gallery {
+    max-width: 600px;
+    margin: auto;
+}
+
+.main-image img {
+    width: 60%;
+    height: auto;
+    margin: auto;
+}
+
+.thumbnail-list,
+.page-2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto 30px;
+    width: 60%;
+}
+
+.thumbnail-list img {
+    width: 22%;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: border 0.3s;
+    object-fit: cover;
+}
+
+.product-item-block {
+    width: 60%;
+    margin: auto;
+}
+
+.product-item-color,
+.product-item-price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    margin: 10px auto;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+select {
+    width: 60%;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+dt,
+dd {
+    width: 30%;
+}
+
+.product-item-explanation {
+    margin: 30px 0;
+}
+
+.purchase-btn {
+    padding: 10px 0;
+    width: 60%;
+    cursor: pointer;
+}
+
+/*  */

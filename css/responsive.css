@@ -1,0 +1,999 @@
+@charset "UTF-8";
+
+:root {
+    /* size */
+    --font-size-12px: 0.75rem;
+    --font-size-14px: 0.875rem;
+    --font-size-16px: 1rem;
+    --font-size-18px: 1.125rem;
+    --font-size-24px: 1.5rem;
+    --font-size-30px: 1.875rem;
+
+    /* weight */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /* color */
+    --beige-color: #f9f7f2;
+    --black-color: #222222;
+    --white-color: #ffffff;
+    --green-color: #c9dec4;
+    --pink-color: #e07b91;
+}
+
+/* 1023px〜769px */
+@media (min-width: 769px) and (max-width: 1023px) {
+
+  /* whole */
+  body {
+    line-height: 1.6;
+    font-size: var(--font-size-16px);
+  }
+
+  /*  */
+
+  /* footer */
+  footer {
+    padding: 0 30px;
+  }
+
+  /*  */
+
+  /* common */
+  .site-title,
+  .room-site-title {
+    font-size: var(--font-size-18px);
+  }
+
+  .section-title {
+    font-size: var(--font-size-24px);
+    margin-bottom: 20px;
+  }
+
+  .section-tagline {
+    font-size: var(--font-size-18px);
+  }
+
+  .about-container,
+  .concept-container,
+  .glossary-container,
+  .diary-container,
+  .faq-container,
+  .contact-container,
+  .product-container,
+  .use-container {
+    padding: 100px 30px 50px 30px;
+  }
+
+  /*  */
+
+  /* room page */
+  .room-site-title {
+    left: 30px;
+  }
+
+  .room-menu-area {
+    right: 30px;
+  }
+
+  .follow-menu {
+    width: 80px;
+    height: 80px;
+    right: 30px;
+  }
+
+  .follow-menu a {
+    font-size: var(--font-size-16px);
+  }
+
+  /*  */
+
+  /* header */
+  .pc-header {
+    height: 50px;
+    padding: 0 30px;
+  }
+
+  .menu-items {
+    gap: 30px;
+  }
+
+  /*  */
+
+  /* about section */
+  .wrapper {
+    width: 90%;
+    margin: 30px auto 0;
+  }
+
+  .wrapper p:not(:last-child),
+  .upper-row li:not(:last-child),
+  .lower-tier li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  /*  */
+
+  /* glossary section */
+  .glossary-list {
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  .inner {
+    padding-bottom: 0;
+  }
+
+  .term-title {
+    font-size: var(--font-size-18px);
+  }
+
+  .feature-detail {
+    text-align: justify;
+    margin: 20px;
+  }
+
+  .pc-br {
+    display: none;
+  }
+
+  .crochet-img,
+  .afgan-img {
+    height: 270px;
+  }
+
+  .material-list {
+    width: 90%;
+  }
+
+  .yarn-type p {
+    width: 90%;
+  }
+
+  .feature {
+    margin-bottom: 10px;
+  }
+
+  .grossary-white1,
+  .grossary-white3 {
+    top: -130px;
+  }
+
+  .grossary-white2,
+  .grossary-white4 {
+    top: -130px;
+  }
+
+  .yarn-type,
+  .metaer-figure,
+  .material-area {
+    margin-bottom: 40px;
+  }
+
+  /*  */
+
+  /* diary */
+  .diarys-card {
+    width: 90%;
+    margin: 30px auto 0;
+    row-gap: 40px;
+  }
+
+  .card-inner {
+    width: 45%;
+    height: 330px;
+  }
+
+  .diarys-day {
+    font-size: var(--font-size-14px);
+  }
+
+  /*  */
+
+  /* faq */
+  .faq-points {
+    margin: 30px auto 0;
+    width: 90%;
+  }
+
+  .point-number {
+    font-size: var(--font-size-24px);
+  }
+
+  .point:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+
+  /*  */
+
+  /* contact */
+  form {
+    margin-top: 30px;
+  }
+
+  form label {
+    width: 90%;
+  }
+
+  form input,
+  form textarea {
+    width: 90%;
+  }
+
+  .form-group:last-of-type {
+    margin-bottom: 30px;
+  }
+
+  /*  */
+
+  /* use */
+  .site-detail {
+    width: 90%;
+    margin: 30px auto 0;
+  }
+
+  .detail-title {
+    font-size: var(--font-size-18px);
+  }
+
+  /*  */
+
+  /* product */
+  .product-list {
+    width: 90%;
+    margin: 30px auto 0;
+    column-gap: 30px;
+  }
+
+  .product-item {
+    width: calc((100% - 30px) / 2);
+  }
+
+  .page-link {
+    margin: 30px auto 0;
+    width: 20%;
+  }
+
+  /*  */
+
+  /* item page */
+  .product-item-detail {
+    margin: 30px auto 0;
+  }
+
+  .main-image img {
+    width: 70%;
+  }
+
+  .thumbnail-list {
+    width: 70%;
+  }
+
+  .product-item-block {
+    width: 70%;
+  }
+
+  select {
+    width: 70%;
+  }
+
+  dt,
+  dd {
+    width: 35%;
+  }
+
+  .purchase-btn {
+    width: 70%;
+  }
+
+  /*  */
+
+}
+
+/* 768px〜379px */
+@media (min-width: 379px) and (max-width: 768px) {
+
+  /* whole */
+  body {
+    line-height: 1.5;
+    font-size: var(--font-size-16px);
+  }
+
+  /*  */
+
+  /* footer */
+  footer {
+    padding: 0 20px;
+  }
+
+  /*  */
+
+  /* common */
+  .site-title,
+  .room-site-title {
+    font-size: var(--font-size-18px);
+  }
+
+  .section-title {
+    font-size: var(--font-size-24px);
+    margin-bottom: 10px;
+  }
+
+  .section-tagline {
+    font-size: var(--font-size-18px);
+  }
+
+  .about-container,
+  .concept-container,
+  .glossary-container,
+  .diary-container,
+  .faq-container,
+  .contact-container,
+  .product-container,
+  .use-container{
+    padding: 60px 20px 40px 20px;
+  }
+
+  /*  */
+
+  /* room page */
+  #controls {
+    display: none;
+  }
+
+  .follow-menu {
+    width: 70px;
+    height: 70px;
+    right: 20px;
+    bottom: 10px;
+  }
+
+  .follow-menu a {
+    font-size: var(--font-size-14px);
+  }
+
+  /*  */
+
+  /* header */
+  .pc-header {
+    display: none;
+  }
+
+  .about .room-header,
+  .contact .room-header,
+  .faq .room-header,
+  .diary .room-header,
+  .grossary .room-header,
+  .use .room-header,
+  .product .room-header,
+  .items .room-header {
+    display: flex;
+  }
+
+  .menu-door,
+  .menu-room,
+  .menu-bookshelf {
+    display: none;
+  }
+
+  .room-site-title {
+    font-size: var(--font-size-16px);
+    left: 20px;
+  }
+
+  .room-menu-title {
+    font-size: var(--font-size-16px);
+  }
+
+  .room-menu-area {
+    right: 20px;
+  }
+
+  /*  */
+
+  /* about section */
+  .wrapper {
+    width: 100%;
+    margin: 30px auto 0;
+  }
+
+  .wrapper p:not(:last-child),
+  .upper-row li:not(:last-child),
+  .lower-tier li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  /*  */
+
+  /* glossary section */
+  .glossary-list {
+    display: block;
+    width: 100%;
+    margin: 30px auto;
+  }
+
+  .inner {
+    padding-bottom: 0;
+  }
+
+  .term-item-right {
+    margin-top: 20px;
+  }
+
+  .term-title {
+    font-size: var(--font-size-18px);
+    padding: 5px 0;
+  }
+
+  .feature-detail {
+    text-align: justify;
+    margin: 10px;
+  }
+
+  .pc-br {
+    display: none;
+  }
+
+  .crochet-img,
+  .afgan-img {
+    height: 280px;
+  }
+
+  .material-list {
+    width: 100%;
+    row-gap: 120px;
+    padding: 40px 0;
+  }
+
+  .yarn-type p {
+    width: 100%;
+  }
+
+  .feature {
+    margin-bottom: 10px;
+  }
+
+  .grossary-white1,
+  .grossary-white3 {
+    top: -100px;
+    left: 10px;
+    width: 100%;
+  }
+
+  .grossary-white2,
+  .grossary-white4 {
+    top: -100px;
+    right: 10px;
+    width: 100%;
+  }
+
+  .yarn-type,
+  .metaer-figure,
+  .material-area {
+    margin-bottom: 40px;
+  }
+
+  /*  */
+
+  /* diary */
+  .diarys-card {
+    width: 100%;
+    margin: 30px auto 0;
+    row-gap: 30px;
+  }
+
+  .card-inner {
+    width: 45%;
+    height: 300px;
+  }
+
+  .diarys-day {
+    font-size: var(--font-size-14px);
+  }
+
+  /*  */
+
+  /* faq */
+  .faq-points {
+    margin: 40px auto 0;
+    width: 100%;
+  }
+
+  .point-number {
+    font-size: var(--font-size-18px);
+  }
+
+  .point-q {
+    font-size: var(--font-size-16px);
+    top: -15px;
+  }
+
+  .point {
+    padding: 10px;
+  }
+
+  .point:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+
+  /*  */
+
+  /* contact */
+  form {
+    margin-top: 30px;
+  }
+
+  form label {
+    width: 100%;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+  }
+
+  .form-group:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  /*  */
+
+  /* use */
+  .site-detail {
+    width: 100%;
+    margin: 30px auto 0;
+  }
+
+  .detail-title {
+    font-size: var(--font-size-18px);
+  }
+
+  /*  */
+
+  /* product */
+  .product-list {
+    width: 100%;
+    margin: 30px auto 0;
+    column-gap: 30px;
+  }
+
+  .product-item {
+    width: calc((100% - 30px) / 2);
+  }
+
+  .product-name {
+    padding: 5px 0;
+  }
+
+  .page-link {
+    margin: 30px auto 0;
+    width: 20%;
+  }
+
+  /*  */
+
+  /* item page */
+  .product-item-detail {
+    margin: 30px auto 0;
+  }
+
+  .main-image img {
+    width: 90%;
+  }
+
+  .thumbnail-list {
+    width: 90%;
+  }
+
+  .product-item-name {
+    font-size: var(--font-size-18px);
+  }
+
+  .product-item-block {
+    width: 90%;
+  }
+
+  select {
+    width: 70%;
+  }
+
+  dt,
+  dd {
+    width: 35%;
+  }
+
+  .purchase-btn {
+    width: 90%;
+  }
+
+  /*  */
+
+}
+
+/* 378px以下 */
+@media (max-width: 378px) {
+
+  /* whole */
+  body {
+    line-height: 1.5;
+    font-size: var(--font-size-16px);
+  }
+
+  /*  */
+
+  /* footer */
+  footer {
+    padding: 0 20px;
+  }
+
+  /*  */
+
+  /* common */
+  .site-title,
+  .room-site-title {
+    font-size: var(--font-size-18px);
+  }
+
+  .section-title {
+    font-size: var(--font-size-24px);
+    margin-bottom: 10px;
+  }
+
+  .section-tagline {
+    font-size: var(--font-size-16px);
+  }
+
+  .about-container,
+  .concept-container,
+  .glossary-container,
+  .diary-container,
+  .faq-container,
+  .contact-container,
+  .product-container,
+  .use-container {
+    padding: 60px 20px 30px 20px;
+  }
+
+  /*  */
+
+  /* room page */
+  #controls {
+    display: none;
+  }
+
+  .follow-menu {
+    width: 60px;
+    height: 60px;
+    right: 20px;
+    bottom: 10px;
+  }
+
+  .follow-menu a {
+    font-size: var(--font-size-12px);
+  }
+
+  /*  */
+
+  /* header */
+  .pc-header {
+    display: none;
+  }
+
+  .about .room-header,
+  .contact .room-header,
+  .faq .room-header,
+  .diary .room-header,
+  .grossary .room-header,
+  .use .room-header,
+  .product .room-header,
+  .items .room-header {
+    display: flex;
+  }
+
+  .room-site-title {
+    font-size: var(--font-size-16px);
+    left: 20px;
+  }
+
+  .room-menu-title {
+    font-size: var(--font-size-16px);
+  }
+
+  .room-menu-area {
+    right: 20px;
+  }
+
+  /*  */
+
+  /* about section */
+  .wrapper {
+    width: 100%;
+    margin: 30px auto 0;
+    text-align: justify;
+  }
+
+  .wrapper p:not(:last-child),
+  .upper-row li:not(:last-child),
+  .lower-tier li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .lower-tier-wrapper {
+    display: block;
+  }
+
+  .lower-img {
+    width: 250px;
+    height: 250px;
+    margin: 10px auto;
+  }
+
+  /*  */
+
+  /* glossary section */
+  .glossary-list {
+    display: block;
+    width: 100%;
+    margin: 30px auto;
+  }
+
+  .term-item-right {
+    margin-top: 20px;
+  }
+
+  .term-title {
+    font-size: var(--font-size-18px);
+    padding: 5px 0;
+  }
+
+  .feature-detail {
+    text-align: justify;
+    margin: 10px;
+  }
+
+  .inner {
+    padding-bottom: 0;
+  }
+
+  .pc-br {
+    display: none;
+  }
+
+  .crochet-img,
+  .afgan-img {
+    height: 200px;
+  }
+
+  .material-list {
+    width: 100%;
+    row-gap: 120px;
+    padding: 40px 0;
+  }
+
+  .yarn-type p {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .feature {
+    margin-bottom: 10px;
+  }
+
+  .material-list {
+    display: block;
+    margin: auto;
+  }
+
+  .material-items1,
+  .material-items2,
+  .material-items3,
+  .material-items4 {
+    width: 100%;
+  }
+
+  .material-items1,
+  .material-items2,
+  .material-items3 {
+    margin-bottom: 80px;
+  }
+
+  .grossary-white1,
+  .grossary-white3 {
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+
+  .grossary-white2,
+  .grossary-white4 {
+    top: -80px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 80%;
+  }
+
+  .yarn-type,
+  .metaer-figure,
+  .material-area {
+    margin-bottom: 30px;
+  }
+
+  .material-area p {
+    text-align: justify;
+  }
+
+  /*  */
+
+  /* diary */
+  .diarys-card {
+    width: 100%;
+    margin: 30px auto 0;
+    display: block;
+  }
+
+  .card-inner {
+    width: 100%;
+    height: 250px;
+    margin: auto;
+  }
+
+  .card-inner:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .diarys-day {
+    font-size: var(--font-size-14px);
+    margin-bottom: 10px;
+  }
+
+  .diary-content {
+    padding: 10px;
+  }
+
+  /*  */
+
+  /* faq */
+  .faq-points {
+    margin: 50px auto 0;
+    width: 100%;
+  }
+
+  .point-number {
+    font-size: var(--font-size-18px);
+  }
+
+  .point-q {
+    font-size: var(--font-size-16px);
+    position: static;
+    background: var(--white-color);
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .point {
+    padding: 20px 10px;
+    background: var(--white-color);
+  }
+
+  .point:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+
+  /*  */
+
+  /* contact */
+  form {
+    margin-top: 30px;
+  }
+
+  form label {
+    width: 100%;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+  }
+
+  .form-group:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  /*  */
+
+  /* use */
+  .site-detail {
+    width: 100%;
+    margin: 30px auto 0;
+  }
+
+  .detail-title {
+    font-size: var(--font-size-18px);
+  }
+
+  .site-detail p:first-of-type {
+    margin-bottom: 10px;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .sp-br {
+    display: inline;
+  }
+
+  /*  */
+
+  /* product */
+  .product-list {
+    width: 100%;
+    margin: 30px auto 0;
+    display: block;
+  }
+
+  .product-item {
+    width: 100%;
+    margin: auto;
+  }
+
+  .product-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .product-name {
+    font-size: var(--font-size-16px);
+    padding: 5px 0;
+  }
+
+  .page-link {
+    margin: 30px auto 0;
+    width: 20%;
+    font-size: var(--font-size-16px);
+  }
+
+  /*  */
+
+  /* item page */
+  .product-item-detail {
+    margin: 30px auto 0;
+  }
+
+  .main-image img {
+    width: 100%;
+  }
+
+  .thumbnail-list {
+    width: 100%;
+  }
+
+  .product-item-name {
+    font-size: var(--font-size-18px);
+  }
+
+  .product-item-block {
+    width: 100%;
+  }
+
+  select {
+    width: 70%;
+  }
+
+  dt,
+  dd {
+    width: 35%;
+  }
+
+  .purchase-btn {
+    width: 100%;
+  }
+
+  /*  */
+}

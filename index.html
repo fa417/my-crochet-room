@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Crochet Room</title>
+  <meta name="description" content="3Dで再現した手作り編み物の裁縫部屋です。ドアから入って机や本棚を自由に見て回りながら、作品やサイトの使い方を楽しく体験できます。">
+  <link rel="icon" href="/img/favicon.webp">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Zen+Kurenaido&family=Zen+Old+Mincho&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
+    }
+  }
+</script>
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="room-header">
+      <h1 class="room-site-title">My Crochet Room</h1>
+      <div class="room-menu-area">
+        <nav id="room-menu">
+          <h2 class="room-menu-title" id="menuToggle">Menu</h2>
+          <ul class="room-menu-items" id="menuItems">
+
+            <li><a href="./html/about.html#about">About</a></li>
+            <li><a href="./html/about.html#concept">Concept</a></li>
+
+            <li class="has-sub-menu">
+              <a href="#" class="room-menu-toggle">Products</a>
+              <ul class="products-sub-menu">
+                <li><a href="./html/products/knit/knit-journal.html">ぬくもりの糸もの帖</a></li>
+                <li><a href="./html/products/amigurumi/amigurumi-forest.html">ちいさな編みぐるみの森</a></li>
+                <li><a href="./html/products/daily/everyday-things.html">暮らしの中のかたすみ</a></li>
+                <li><a href="./html/products/life/little-forest-life.html">ちいさな森のくらし</a></li>
+              </ul>
+            </li>
+
+            <li class="has-sub-menu">
+              <a href="#" class="room-menu-toggle">Room</a>
+              <ul class="room-sub-menu">
+                <li class="menu-door"><a href="./html/room.html#link-door" id="link-door">ドアの前</a></li>
+                <li class="menu-room"><a href="./html/room.html#link-room" id="link-room">部屋を見る</a></li>
+                <li class="menu-desk"><a href="./html/room.html#link-desk" id="link-desk">机を見る</a></li>
+                <li class="menu-bookshelf"><a href="./html/room.html#link-bookshelf" id="link-bookshelf">本棚を見る</a></li>
+              </ul>
+            </li>
+
+            <li><a href="./html/use.html">How to Use</a></li>
+            <li><a href="./html/glossary.html">Glossary</a></li>
+            <li><a href="./html/diary.html">Diary</a></li>
+            <li><a href="./html/faq.html">FAQ</a></li>
+            <li><a href="./html/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div id="loading">
+    <div class="spinner"></div>
+  </div>
+
+  <div id="controls">
+
+    <!-- ドアの前 -->
+    <div id="controls-door" style="display: block;">
+      <button id="btnRoom">部屋に入る</button>
+    </div>
+
+    <!-- 部屋 -->
+    <div id="controls-room">
+      <button id="btnDesk">机を見る</button>
+      <button id="btnBookshelf">本棚を見る</button>
+    </div>
+
+    <!-- 本棚の前 -->
+    <div id="controls-bookshelf">
+      <button id="btnChoose">本を選ぶ</button>
+    </div>
+
+    <!-- 机の前 -->
+    <div id="controls-chair">
+      <button id="toggleLight">ライトをつける</button>
+      <button id="btnChair">椅子に座る</button>
+    </div>
+
+    <!-- 戻る -->
+    <div id="controls-back" style="display: none;margin-top: 8px;">
+      <button id="btnBack">１つ前に戻る</button>
+    </div>
+  </div>
+
+  <div class="follow-menu"><a href="./html/use.html">How to Use</a></div>
+
+  <!-- 3d -->
+  <script type="module" src="./js/three/main.js"></script>
+  <script type="module" src="./js/three/hoverTools.js"></script>
+  <script type="module" src="./js/three/hoverBooks.js"></script>
+  <script type="module" src="./js/three/evens.js"></script>
+  <!--  -->
+  <script src="./js/menu.js"></script>
+
+</body>
+
+</html>

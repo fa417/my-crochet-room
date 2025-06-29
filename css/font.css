@@ -1,0 +1,313 @@
+@charset "UTF-8";
+
+/* font-family: 'Cormorant Garamond', serif;
+font-family: "Zen Old Mincho", serif; */
+
+:root {
+    /* size */
+    --font-size-12px: 0.75rem;
+    --font-size-14px: 0.875rem;
+    --font-size-16px: 1rem;
+    --font-size-18px: 1.125rem;
+    --font-size-24px: 1.5rem;
+    --font-size-30px: 1.875rem;
+
+    /* weight */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /* color */
+    --beige-color: #f9f7f2;
+    --black-color: #222222;
+    --white-color: #ffffff;
+    --green-color: #c9dec4;
+    --pink-color: #e07b91;
+}
+
+/* whole */
+* {
+    font-style: normal;
+}
+
+html {
+    font-weight: var(--font-weight-light);
+}
+
+body {
+    color: var(--black-color);
+    font-size: var(--font-size-18px);
+    font-family: '源ノ明朝', serif;
+    font-weight: var(--font-weight-light);
+    line-height: 1.7;
+}
+
+/*  */
+
+/* footer */
+footer p {
+    font-size: var(--font-size-12px);
+}
+
+/*  */
+
+/* common */
+.site-title,
+.room-site-title {
+    font-size: var(--font-size-24px);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: var(--font-weight-regular);
+}
+
+.section-title {
+    font-size: var(--font-size-30px);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+}
+
+.section-tagline {
+    background: var(--white-color);
+    font-size: var(--font-size-24px);
+    font-family: "Zen Old Mincho", serif;
+    font-weight: var(--font-weight-medium);
+}
+
+/*  */
+
+/* room page */
+.room-menu-title {
+    font-size: var(--font-size-18px);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: var(--font-weight-medium);
+}
+
+.room-menu-items li {
+    font-size: var(--font-size-14px);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: var(--font-weight-medium);
+}
+
+.room-menu-items .products-sub-menu li,
+.room-menu-items .room-sub-menu li {
+    font-size: var(--font-size-12px);
+    font-family: '源ノ明朝', serif;
+    font-weight: var(--font-weight-light) !important;
+}
+
+#btnRoom,
+#btnDesk,
+#btnBookshelf,
+#btnChoose,
+#btnChair,
+#toggleLight,
+#btnBack {
+    font-size: var(--font-size-18px);
+}
+
+/* #tooltip{
+    color: var(--black-color);
+    font-weight: var(--font-weight-regular);
+} */
+
+.follow-menu a {
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-medium);
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/*  */
+
+/* header */
+.menu-title {
+    font-size: var(--font-size-14px);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: var(--font-weight-bold);
+}
+
+#header-menu .menu-items li {
+    font-size: var(--font-size-16px);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: var(--font-weight-medium);
+}
+
+#header-menu .products-sub-menu li,
+#header-menu .room-sub-menu li {
+    font-size: var(--font-size-14px);
+    font-family: '源ノ明朝', serif;
+    font-weight: var(--font-weight-light) !important;
+}
+
+/*  */
+
+/* glossary section */
+.term-item-left,
+.term-item-right {
+    text-align: center;
+}
+
+.term-title {
+    font-size: var(--font-size-24px);
+    padding: 10px 0;
+}
+
+.feature {
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: var(--font-size-14px);
+}
+
+.yarn-type,
+.metaer-figure,
+.material-area {
+    text-align: center;
+}
+
+/*  */
+
+/* diary */
+.diarys-title {
+    font-size: var(--font-size-18px);
+    text-align: center;
+}
+
+.diarys-day {
+    font-size: var(--font-size-12px);
+    font-weight: var(--font-weight-light);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.diary-content p {
+    font-size: var(--font-size-16px);
+    text-align: justify;
+}
+
+/*  */
+
+/* faq */
+.faq-points {
+    text-align: left;
+}
+
+.point-number {
+    font-size: var(--font-size-30px);
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 0.1em;
+}
+
+.point-q {
+    font-size: var(--font-size-18px);
+    letter-spacing: 0.1em;
+
+}
+
+.point-a {
+    color: var(--pink-color);
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-bold);
+}
+
+.point-detail {
+    font-size: var(--font-size-16px);
+}
+
+/*  */
+
+/* contact */
+form,
+form input,
+form textarea {
+    text-align: center;
+}
+
+.label {
+    font-size: var(--font-size-16px);
+}
+
+.example-text {
+    color: var(--pink-color);
+    font-size: var(--font-size-14px);
+    font-weight: var(--font-weight-regular);
+}
+
+.send {
+    color: var(--white-color);
+    font-size: var(--font-size-18px);
+}
+
+/*  */
+
+/* use */
+.site-detail {
+    text-align: center;
+}
+
+.detail-title {
+    font-size: var(--font-size-24px);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    margin: 30px 0 20px;
+}
+
+/*  */
+
+/* product */
+.product-name {
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-regular);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.page-link {
+    font-size: var(--font-size-18px);
+    font-weight: var(--font-weight-regular);
+    text-align: center;
+}
+
+/*  */
+
+/* item page */
+.product-item-block {
+    text-align: center;
+}
+
+.product-item-name {
+    font-size: var(--font-size-24px);
+}
+
+.product-item-block label {
+    font-size: var(--font-size-14px);
+    font-weight: var(--font-weight-bold);
+}
+
+.select {
+    font-size: var(--font-size-16px);
+}
+
+dt {
+    font-size: var(--font-size-14px);
+    font-weight: var(--font-weight-bold);
+}
+
+dd {
+    font-size: var(--font-size-16px);
+}
+
+.product-item-explanation {
+    font-size: var(--font-size-18px);
+    text-align: justify;
+}
+
+.purchase-btn {
+    color: var(--white-color);
+    font-size: var(--font-size-18px);
+}
+
+/*  */
