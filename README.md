@@ -2,7 +2,7 @@
 A fictional website for showcasing handmade crochet works. Designed to offer a cozy, interactive sewing room experience.
 
 🔗 Live Site
-https://my-crochet-room.vercel.app/html/diary.html
+https://my-crochet-room.vercel.app/
 
 🛠️ Built With
 HTML / CSS / JavaScript
