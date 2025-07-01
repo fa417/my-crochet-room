@@ -200,7 +200,7 @@ function setCameraToBook() {
 
 // 768px以下
 function setCameraToDeskMobile() {
-  camera.fov = 25;
+  camera.fov = 35;
   camera.updateProjectionMatrix();
   camera.position.set(0, 4.2, -3);
   camera.lookAt(-6, 1.3, -3);
