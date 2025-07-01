@@ -78,20 +78,20 @@ footer p {
 
 /* room page */
 .room-menu-title {
-    font-size: var(--font-size-18px);
+    font-size: var(--font-size-24px);
     font-family: 'Cormorant Garamond', serif;
     font-weight: var(--font-weight-medium);
 }
 
 .room-menu-items li {
-    font-size: var(--font-size-14px);
+    font-size: var(--font-size-18px);
     font-family: 'Cormorant Garamond', serif;
     font-weight: var(--font-weight-medium);
 }
 
 .room-menu-items .products-sub-menu li,
 .room-menu-items .room-sub-menu li {
-    font-size: var(--font-size-12px);
+    font-size: var(--font-size-16px);
     font-family: '源ノ明朝', serif;
     font-weight: var(--font-weight-light) !important;
 }
