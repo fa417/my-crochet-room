@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const btn = document.getElementById(id);
     if (btn) {
       btn.addEventListener('click', (e) => {
-        e.preventDefault(); // aタグのデフォルト動作（ページジャンプ）を防ぐ
+        e.preventDefault();
         action();
       });
     }

@@ -55,9 +55,24 @@ lightButton.addEventListener('click', () => {
 });
 // 
 
-// 700px以下、非表示
-if (window.innerWidth <= 700) {
+// 768px以下、非表示
+if (window.innerWidth <= 768) {
   document.querySelectorAll('.menu-door, .menu-room, .menu-bookshelf').forEach(el => {
     el.style.display = 'none';
   });
 }
+
+// function updateMenuVisibility() {
+//   const width = window.innerWidth;
+//   const menuItems = document.querySelectorAll('.menu-door, .menu-room, .menu-bookshelf');
+
+//   if (width <= 768) {
+//     menuItems.forEach(el => el.style.display = 'none');
+//   } else {
+//     menuItems.forEach(el => el.style.display = '');
+//   }
+// }
+
+// window.addEventListener('load', updateMenuVisibility);
+
+// window.addEventListener('resize', updateMenuVisibility);

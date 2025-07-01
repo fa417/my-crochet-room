@@ -11,7 +11,7 @@ import { loadNeedle } from '../load/needle.js';
 import { loadAfghan } from '../load/afghan.js';
 import { loadRowCounter } from '../load/row-counter.js';
 import { loadYarnStand } from '../load/yarn-stand.js';
-import { setupResponsiveBehavior } from './responsive.js';
+// import { setupResponsiveBehavior } from './responsive.js';
 
 
 const scene = new THREE.Scene();
@@ -32,7 +32,7 @@ let currentStage = 'door';
 window.addEventListener('DOMContentLoaded', () => {
   setCameraToDoor();
   showOnlyControls('controls-door');
-  setupResponsiveBehavior();
+  // setupResponsiveBehavior();
 });
 //
 
@@ -71,6 +71,19 @@ loader.load(
   '../../models/furniture/room.glb',
   (gltf) => {
     scene.add(gltf.scene);
+
+    const width = window.innerWidth;
+
+    if (!window.location.hash) {
+      if (width > 768) {
+        setCameraToDoor();
+      } else if (width > 378) {
+        setCameraToDeskMobile();
+      } else {
+        setCameraToDeskSmall();
+      }
+    }
+
     handleInitialHashCameraMove();
   },
   undefined,
@@ -92,7 +105,6 @@ function handleInitialHashCameraMove() {
   }
 }
 
-
 const tooltip = document.getElementById('tooltip');
 export const toolObjects = [];
 
@@ -111,7 +123,6 @@ loadNeedle(scene);
 loadAfghan(scene);
 loadYarnStand(scene);
 loadRowCounter(scene);
-// loadBooksStand(scene);
 
 import { handleBookHover } from './hoverBooks.js';
 
@@ -209,7 +220,7 @@ function setCameraToDeskMobile() {
 
 // 378px以下机
 function setCameraToDeskSmall() {
-  camera.fov = 35;
+  camera.fov = 70;
   camera.updateProjectionMatrix();
   camera.position.set(0, 3.5, -3);
   camera.lookAt(-6, 1.85, -3);
