@@ -143,28 +143,9 @@ form button:active,
     border-radius: 30px;
 }
 
-.glossary-list .term-title {
-    background: var(--green-color);
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-}
-
-.grossary-white1,
-.grossary-white3 {
-    position: absolute;
-    top: -130px;
-    left: 20px;
-    width: 90%;
-    z-index: -1;
-}
-
-.grossary-white2,
-.grossary-white4 {
-    position: absolute;
-    top: -130px;
-    right: 20px;
-    width: 90%;
-    z-index: -1;
+.material-items{
+    background: var(--white-color);
+    border-radius: 50%;
 }
 
 /*  */
