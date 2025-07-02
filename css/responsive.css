@@ -467,6 +467,7 @@
 
   .yarn-type p {
     width: 100%;
+    text-align: justify;
   }
 
   .feature {
@@ -477,6 +478,10 @@
   .metaer-figure,
   .material-area {
     margin-bottom: 40px;
+  }
+
+  .material-area p{
+    text-align: justify;
   }
 
   /*  */
@@ -546,14 +551,14 @@
 
   /* use */
   .site-detail {
-    text-align: left;
+    text-align: justify;
     width: 100%;
     margin: 30px auto 0;
   }
 
   .detail-title {
     font-size: var(--font-size-18px);
-    text-align: left;
+    text-align: justify;
   }
 
   .site-detail p:first-of-type {
@@ -582,6 +587,7 @@
   }
 
   .product-name {
+    font-size: var(--font-size-16px);
     padding: 5px 0;
   }
 
@@ -901,12 +907,12 @@
   .site-detail {
     width: 100%;
     margin: 30px auto 0;
-    text-align: left;
+    text-align: justify;
   }
 
   .detail-title {
     font-size: var(--font-size-18px);
-    text-align: left;
+    text-align: justify;
   }
 
   .site-detail p:first-of-type {
