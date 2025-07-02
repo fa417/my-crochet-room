@@ -391,7 +391,7 @@
     display: none;
   }
 
-  .menu-sp-desk{
+  .menu-sp-desk {
     display: block;
   }
 
@@ -420,6 +420,16 @@
   .upper-row li:not(:last-child),
   .lower-tier li:not(:last-child) {
     margin-bottom: 10px;
+  }
+
+  .lower-tier-wrapper {
+    display: block;
+  }
+
+  .lower-img {
+    width: 300px;
+    height: 300px;
+    margin: 10px auto;
   }
 
   /*  */
@@ -559,12 +569,14 @@
 
   /* use */
   .site-detail {
+    text-align: left;
     width: 100%;
     margin: 30px auto 0;
   }
 
   .detail-title {
     font-size: var(--font-size-18px);
+    text-align: left;
   }
 
   /*  */
@@ -929,10 +941,12 @@
   .site-detail {
     width: 100%;
     margin: 30px auto 0;
+    text-align: left;
   }
 
   .detail-title {
     font-size: var(--font-size-18px);
+    text-align: left;
   }
 
   .site-detail p:first-of-type {
