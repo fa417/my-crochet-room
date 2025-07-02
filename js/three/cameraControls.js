@@ -11,8 +11,6 @@ import { loadNeedle } from '../load/needle.js';
 import { loadAfghan } from '../load/afghan.js';
 import { loadRowCounter } from '../load/row-counter.js';
 import { loadYarnStand } from '../load/yarn-stand.js';
-// import { setupResponsiveBehavior } from './responsive.js';
-
 
 const scene = new THREE.Scene();
 
@@ -32,7 +30,7 @@ let currentStage = 'door';
 window.addEventListener('DOMContentLoaded', () => {
   setCameraToDoor();
   showOnlyControls('controls-door');
-  // setupResponsiveBehavior();
+
 });
 //
 
@@ -67,20 +65,40 @@ directionalLight.position.set(5, 10, 5);
 scene.add(directionalLight);
 
 const loader = new GLTFLoader();
+
 loader.load(
   '../../models/furniture/room.glb',
   (gltf) => {
     scene.add(gltf.scene);
+    console.log('GLB読み込み完了');
 
-    const width = window.innerWidth;
+    function handleInitialHashCameraMove() {
+      const hash = window.location.hash;
+      const width = window.innerWidth;
 
-    if (!window.location.hash) {
-      if (width > 768) {
+      if (hash === '#link-desk') {
+        setCameraToChair();
+      } else if (hash === '#sp-link-desk') {
+        if (width <= 378) {
+          setCameraToDeskSmall();
+        } else {
+          setCameraToDeskMobile();
+        }
+      } else if (hash === '#link-door') {
         setCameraToDoor();
-      } else if (width > 378) {
-        setCameraToDeskMobile();
+      } else if (hash === '#link-room') {
+        setCameraToRoom();
+      } else if (hash === '#link-bookshelf') {
+        setCameraToBook();
       } else {
-        setCameraToDeskSmall();
+
+        if (width > 768) {
+          setCameraToDoor();
+        } else if (width > 378) {
+          setCameraToDeskMobile();
+        } else {
+          setCameraToDeskSmall();
+        }
       }
     }
 
@@ -92,18 +110,6 @@ loader.load(
   }
 );
 
-function handleInitialHashCameraMove() {
-  const hash = window.location.hash;
-  if (hash === '#link-room') {
-    setCameraToRoom();
-  } else if (hash === '#link-door') {
-    setCameraToDoor();
-  } else if (hash === '#link-desk') {
-    setCameraToChair();
-  } else if (hash === '#link-bookshelf') {
-    setCameraToBook();
-  }
-}
 
 const tooltip = document.getElementById('tooltip');
 export const toolObjects = [];

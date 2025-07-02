@@ -152,6 +152,10 @@ footer {
     padding: 10px;
 }
 
+.menu-sp-desk{
+    display: none;
+}
+
 #btnRoom,
 #btnDesk,
 #btnBookshelf,

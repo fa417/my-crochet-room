@@ -62,17 +62,3 @@ if (window.innerWidth <= 768) {
   });
 }
 
-// function updateMenuVisibility() {
-//   const width = window.innerWidth;
-//   const menuItems = document.querySelectorAll('.menu-door, .menu-room, .menu-bookshelf');
-
-//   if (width <= 768) {
-//     menuItems.forEach(el => el.style.display = 'none');
-//   } else {
-//     menuItems.forEach(el => el.style.display = '');
-//   }
-// }
-
-// window.addEventListener('load', updateMenuVisibility);
-
-// window.addEventListener('resize', updateMenuVisibility);

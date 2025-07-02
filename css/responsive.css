@@ -386,8 +386,13 @@
 
   .menu-door,
   .menu-room,
+  .menu-desk,
   .menu-bookshelf {
     display: none;
+  }
+
+  .menu-sp-desk{
+    display: block;
   }
 
   .room-site-title {

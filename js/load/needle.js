@@ -23,7 +23,7 @@ export function loadNeedle(scene) {
         }
 
         scene.add(needle);
-        resolve(needle);  // ここで読み込み完了オブジェクトを返す
+        resolve(needle);
       },
       undefined,
       (error) => {
