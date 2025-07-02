@@ -351,10 +351,6 @@
     gap: 10px;
   }
 
-  .room-menu-items {
-    margin: 0;
-  }
-
   .follow-menu {
     width: 70px;
     height: 70px;
@@ -401,7 +397,8 @@
   }
 
   .room-menu-title {
-    font-size: var(--font-size-16px);
+    font-size: var(--font-size-18px);
+    padding: 10px;
   }
 
   .room-menu-area {
@@ -734,12 +731,12 @@
   }
 
   .room-site-title {
-    font-size: var(--font-size-16px);
     left: 20px;
   }
 
   .room-menu-title {
-    font-size: var(--font-size-16px);
+    font-size: var(--font-size-18px);
+    padding: 10px;
   }
 
   .room-menu-area {
