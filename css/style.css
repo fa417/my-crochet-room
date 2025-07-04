@@ -62,7 +62,7 @@ form button:active,
 #btnBack {
     background: var(--white-color);
     border: none;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 #btnRoom:hover,
@@ -140,10 +140,10 @@ form button:active,
 .term-item-left,
 .term-item-right {
     background: var(--white-color);
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
-.material-items{
+.material-items {
     background: var(--white-color);
     border-radius: 50%;
 }
@@ -152,12 +152,12 @@ form button:active,
 
 /* diary */
 .diary-thumbnail {
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .diary-content {
     background: var(--white-color);
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 /*  */
@@ -192,21 +192,21 @@ textarea:focus {
 form button {
     background: var(--pink-color);
     border: none;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 /*  */
 
 /* product */
 .product-img {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .product-name {
     background: var(--white-color);
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .page-link:hover,
@@ -236,7 +236,7 @@ select:focus {
 .purchase-btn {
     border: none;
     background: var(--pink-color);
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 /*  */
