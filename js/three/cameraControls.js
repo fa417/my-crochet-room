@@ -226,7 +226,7 @@ function setCameraToDeskMobile() {
 
 // 378px以下机
 function setCameraToDeskSmall() {
-  camera.fov = 70;
+  camera.fov = 50;
   camera.updateProjectionMatrix();
   camera.position.set(0, 3.5, -3);
   camera.lookAt(-6, 1.85, -3);
