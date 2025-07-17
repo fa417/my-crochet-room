@@ -84,7 +84,7 @@ footer p {
 }
 
 .room-menu-items li {
-    font-size: var(--font-size-18px);
+    font-size: var(--font-size-16px);
     font-family: 'Cormorant Garamond', serif;
     font-weight: var(--font-weight-medium);
 }
