@@ -429,7 +429,7 @@
 
   .room-menu-title {
     font-size: var(--font-size-18px);
-    padding: 0 5px;
+    padding: 10px;
   }
 
   .room-menu-area {
@@ -812,11 +812,10 @@
   }
 
   .room-menu-title {
-    font-size: var(--font-size-18px);
-    padding: 0 5px;
+    padding: 5px 10px;
   }
 
-  .room-menu-items{
+  .room-menu-items {
     padding: 10px;
   }
 
