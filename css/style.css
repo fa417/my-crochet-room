@@ -240,4 +240,33 @@ select:focus {
     border-radius: 20px;
 }
 
+.top-message {
+    background: var(--green-color);
+    border-radius: 20px;
+}
+
+/*  */
+
+/* cart section */
+
+.addition-item{
+    background: var(--white-color);
+}
+.delete-button{
+    background: var(--green-color);
+    border: none;
+    border-radius: 30px;
+}
+
+.check{
+    background: var(--pink-color);
+    border: none;
+    border-radius: 30px;
+}
+
+.check:hover,
+.check:active{
+    color: var(--pink-color);
+    background: var(--white-color);
+}
 /*  */

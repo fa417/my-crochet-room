@@ -5,6 +5,7 @@ window.addEventListener('load', () => {
     if (loading) loading.style.display = 'none';
   }, 1000);
 });
+// 
 
 /* room page - メニューボタン - */
 document.getElementById('menuToggle').addEventListener('click', function () {
@@ -43,4 +44,6 @@ thumbnails.forEach(thumb => {
     mainImage.setAttribute('src', newSrc);
   });
 });
+
+export {mainImage}
 // 

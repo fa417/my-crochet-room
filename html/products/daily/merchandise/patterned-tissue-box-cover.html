@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="../../../../css/responsive.css">
 </head>
 
-<body class="items">
+<body class="items" data-page="product">
   <header>
     <div class="pc-header">
       <h1 class="site-title">My Crochet Room</h1>
@@ -51,6 +51,7 @@
           <li><a href="../../../diary.html">Diary</a></li>
           <li><a href="../../../faq.html">FAQ</a></li>
           <li><a href="../../../contact.html">Contact</a></li>
+          <li><a href="../../../cart.html">Cart</a></li>
         </ul>
       </nav>
     </div>
@@ -87,6 +88,7 @@
             <li><a href="../../../diary.html">Diary</a></li>
             <li><a href="../../../faq.html">FAQ</a></li>
             <li><a href="../../../contact.html">Contact</a></li>
+            <li><a href="../../../cart.html">Cart</a></li>
           </ul>
         </nav>
       </div>
@@ -122,15 +124,15 @@
           </div>
 
           <div class="product-item-block">
-            <h4 class="product-item-name">模様編みのティッシュボックスカバー</h4>
+            <h4 class="product-item-name" id="product-name">模様編みのティッシュボックスカバー</h4>
             <dl class="product-item-color">
               <dt>color</dt>
-              <dd>gradation</dd>
+              <dd id="product-color">gradation</dd>
             </dl>
 
             <dl class="product-item-price">
               <dt>price</dt>
-              <dd>5000</dd>
+              <dd id="product-price">5000</dd>
             </dl>
 
             <p class="product-item-explanation">
@@ -138,7 +140,7 @@
               ひと目ひと目丁寧に編まれた模様が、暮らしの中に落ち着きとあたたかみを添えてくれます。
               テーブルや棚の上に、静かな彩りを加えてくれる一品です。</p>
 
-            <button type="button" class="purchase-btn">購入</button>
+            <button type="button" class="purchase-btn" id="purchase-btn">購入</button>
           </div>
         </div>
 
@@ -154,7 +156,8 @@
   <a href="https://fuko-portfolio.vercel.app/html/my-crochet-room.html" class="home-link"
     aria-label="ポートフォリオサイトに戻る">←</a>
 
-  <script src="../../../../js/menu.js"></script>
+  <script type="module" src="../../../../js/menu.js"></script>
+  <script type="module" src="../../../../js/product.js"></script>
 </body>
 
 </html>

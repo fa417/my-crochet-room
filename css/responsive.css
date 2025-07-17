@@ -24,7 +24,7 @@
 }
 
 /* 1023px〜769px */
-@media  (max-width: 1023px) {
+@media (max-width: 1023px) {
 
   /* whole */
   body {
@@ -63,7 +63,8 @@
   .faq-container,
   .contact-container,
   .product-container,
-  .use-container {
+  .use-container,
+  .cart-container {
     padding: 100px 30px 50px 30px;
   }
 
@@ -282,12 +283,33 @@
     width: 70%;
   }
 
+  .top-message {
+    width: 40%;
+  }
+
+  /*  */
+
+  /* cart section */
+
+  .cart-item {
+    margin: 30px auto;
+    width: 90%;
+  }
+
+  .info-wrapper {
+    width: 60%;
+  }
+
+  .delete-button {
+    margin-bottom: 10px;
+  }
+
   /*  */
 
 }
 
 /* 768px〜379px */
-@media  (max-width: 768px) {
+@media (max-width: 768px) {
 
   /* whole */
   body {
@@ -326,7 +348,8 @@
   .faq-container,
   .contact-container,
   .product-container,
-  .use-container {
+  .use-container,
+  .cart-container {
     padding: 60px 20px 40px 20px;
   }
 
@@ -650,7 +673,56 @@
     width: 90%;
   }
 
+  .top-message {
+    width: 50%;
+    padding: 10px 0;
+  }
+
   /*  */
+
+
+  /* cart section */
+
+  .cart-item {
+    margin: 30px auto;
+    width: 100%;
+  }
+
+  .addition-item {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .front-image {
+    width: 100%;
+  }
+
+  .info-wrapper {
+    margin-right: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .merchandise-name {
+    font-size: var(--font-size-18px);
+    margin-bottom: 20px;
+  }
+
+  .merchandise-color {
+    margin-bottom: 5px;
+  }
+
+  .delete-button {
+    margin-top: 20px;
+  }
+
+  .check {
+    font-size: var(--font-size-18px);
+    width: 60%;
+  }
+
+  /*  */
+
 
 }
 
@@ -694,7 +766,8 @@
   .faq-container,
   .contact-container,
   .product-container,
-  .use-container {
+  .use-container,
+  .cart-container {
     padding: 60px 20px 30px 20px;
   }
 
@@ -741,6 +814,10 @@
   .room-menu-title {
     font-size: var(--font-size-18px);
     padding: 0 5px;
+  }
+
+  .room-menu-items{
+    padding: 10px;
   }
 
   .room-menu-area {
@@ -1015,5 +1092,47 @@
     width: 100%;
   }
 
+  .top-message {
+    width: 60%;
+    padding: 10px 0;
+  }
+
   /*  */
+
+  /* cart section */
+
+  .cart-item {
+    margin: 30px auto;
+    width: 100%;
+  }
+
+  .addition-item {
+    gap: 10px;
+  }
+
+  .addition-item:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+
+  .front-image {
+    width: 100%;
+  }
+
+  .merchandise-name {
+    margin-bottom: 20px;
+  }
+
+  .delete-button {
+    font-size: var(--font-size-16px);
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+
+  .check {
+    font-size: var(--font-size-18px);
+    width: 80%;
+  }
+
+  /*  */
+
 }
