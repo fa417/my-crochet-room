@@ -14,8 +14,8 @@ document.getElementById('menuToggle').addEventListener('click', function () {
 
 document.querySelectorAll('.room-menu-toggle').forEach(toggle => {
   toggle.addEventListener('click', function (e) {
-    e.preventDefault();  // デフォルトリンク動作をキャンセル
-    const subMenu = this.nextElementSibling; // 次の兄弟要素のulを取得
+    e.preventDefault();
+    const subMenu = this.nextElementSibling;
     if (subMenu) {
       if (subMenu.style.display === 'block') {
         subMenu.style.display = 'none';
@@ -45,5 +45,5 @@ thumbnails.forEach(thumb => {
   });
 });
 
-export {mainImage}
+export { mainImage }
 // 
