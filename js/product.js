@@ -35,9 +35,9 @@ purchaseBtn.addEventListener('click', () => {
         topMessage.classList.add('top-message');
         document.body.appendChild(topMessage);
 
-        // setTimeout(() => {
-        //     topMessage.remove();
-        // }, 3000);
+        setTimeout(() => {
+            topMessage.remove();
+        }, 3000);
     }
 
     showMessage();
